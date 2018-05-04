@@ -1,0 +1,22 @@
+{
+  "name": "mevn-chatapp",
+  "version": "1.0.0",
+  "description": "MEVN Stack Chat App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "MEVN",
+    "Stack",
+    "Vuejs",
+    "Application"
+  ],
+  "author": "Eric Tapia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.0.17",
+    "vue": "^2.5.16"
+  }
+}
