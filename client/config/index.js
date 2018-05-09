@@ -12,10 +12,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
 		//added this from: https://medium.com/@FrancescoZ/how-to-setup-vue-dev-server-with-a-running-web-server-7532c53b3198     may have to delete
-			'/api': {
+			/*'/api': {
         	target: 'http://localhost:8080',
         	changeOrigin: true
-      	}
+      	}*/
 	},
 
     // Various Dev Server settings

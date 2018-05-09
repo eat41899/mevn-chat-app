@@ -1,10 +1,11 @@
 const express = require('express');
+const router = express.Router();
 const app = express();
 const mongoose = require('mongoose');
 const config = require('./config/database');
 const path = require('path');
-
-
+const authentication = require('./routes/authentication')(router);
+const bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.uri, (error) => {
@@ -14,8 +15,16 @@ mongoose.connect(config.uri, (error) => {
 		console.log('Connected to database: ' + config.db);
 	}
 });
+
+//parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({extended:false}));
+//parse application json
+app.use(bodyParser.json());
+
 //connect to our vue project
 app.use(express.static(__dirname + '/client/dist/'));
+//authentication
+app.use('/authentication', authentication);
 
 app.get('*', (req, res) => {
 	//res.send('<h1>hello world</h1>');
