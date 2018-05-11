@@ -1,15 +1,12 @@
-<template>
-	
+<template>	
 	<div class="navbar">
-
-		
 		<!-- Fixed navbar -->
 		 <nav>
             <div class="row">
                
                 <ul class="main-nav">
-                    <li><router-link to="home">Home</router-link></li>
-                    <li><router-link to="HelloWorld">helloworld</router-link></li>
+                    <li><router-link to="/">Home</router-link></li>
+                    <li><router-link to="register">Register</router-link></li>
 					
                     <li><a href="#plans">Login</a></li>
                 </ul>
@@ -23,7 +20,7 @@
 
 
 <script>
-	
+	/*eslint-disable*/
 	export default {
 		name: 'navbar'
 	}	
@@ -47,6 +44,7 @@
     max-width: 1140px;
     margin: 0 auto 0 auto;
 	top: 0;
+	background-color:#eee;
 }
 .main-nav {
     float: right;
@@ -55,15 +53,13 @@
     margin-top: 55px;
     
 }
-	.navbar nav {
-		top: 0;
-	}
+
 
 /*select all of the li elems*/
 .main-nav li {
     /*put them side by side vs vertical list*/
     display: inline-block;
-    margin-left: 40px
+    margin-left: 10px
 }
 
 

@@ -129,21 +129,21 @@ const userSchema = new Schema({
 	email:{
 		type: String,
 		required: true, 
-		unique: true, 
+		//unique: true, 
 		lowercase: true, 
-		validate: emailValidators
+		//validate: emailValidators
 	},
 	username:{
 		type: String,
 		required: true, 
-		unique: true, 
+		//unique: true, 
 		lowercase: true,
-		validate: usernameValidators
+		//validate: usernameValidators
 	},
 	password:{
 		type: String, 
 		required: true,
-		validate: passwordValidators
+		//validate: passwordValidators
 
 	}
 });
@@ -161,7 +161,7 @@ userSchema.pre('save', function(next) {
 });
 
 // Methods to compare password to encrypted password upon login
-userSchema.methods.comparePassword = (password) => {
+userSchema.methods.comparePassword = function(password) {
 	// Return comparison of login password to password in database (true or false)
 	return bcrypt.compareSync(password, this.password); 
 };
