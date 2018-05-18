@@ -1,11 +1,25 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import axios from 'axios'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import axios from 'axios'
+//import socketio from 'socket.io'
+//import VueSocketIO from 'vue-socket.io'
+
+//import io from 'socket.io-client'
+//window.io = io
+
+//import VueSocketio from 'vue-socket.io';
+//Vue.use(VueSocketio, 'http://localhost:8080/');
+
 window.axios = axios
+
+//export const SocketInstance = socketio('http://localhost:8080');
+
+//Vue.use(VueSocketIO, SocketInstance);
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

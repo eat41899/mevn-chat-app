@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import HomeComponent from '@/components/Home'
 import RegisterComponent from '@/components/Register'
+import ChatRoomComponent from '@/components/ChatRoom'
 
 Vue.use(Router)
 
@@ -24,6 +25,10 @@ export default new Router({
 		{
 			path: '/register',
 			component: RegisterComponent
+		}, 
+		{
+			path: '/chatroom',
+			component: ChatRoomComponent
 		}
 
 	]

@@ -8,7 +8,7 @@
                     <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="register">Register</router-link></li>
 					
-                    <li><a href="#plans">Login</a></li>
+                    <li><a href="#">Login</a></li>
                 </ul>
             </div>
         </nav>

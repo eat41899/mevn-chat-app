@@ -6,7 +6,6 @@
 			<div>
 				
 			</div>
-
 			<form v-for="">
 				<div>
 					<label>Username</label>
@@ -42,6 +41,8 @@
 				login:{
 					username:"",
 					password:""
+					//,
+					//errMessage:""
 				}
 			}
 		},
@@ -55,10 +56,14 @@
 					localStorage.setItem('token', token);
 			
 					if(response.data.success){
-						this.$router.push('/HelloWorld');
-					}
+						this.$router.push('/chatroom');
+					} 
 
-					console.log(response);
+					console.log("MyLogMessage "+ response.data.message);
+					
+					console.log( response);
+					
+					
 
 					
 					

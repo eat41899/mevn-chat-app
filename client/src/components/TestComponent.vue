@@ -12,6 +12,9 @@
 
 
 <script>
+	import io from 'socket.io';
+	var socket = io();
+	
 	export default {
 		name: 'compname',
 		data() {

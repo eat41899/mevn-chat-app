@@ -88,8 +88,8 @@
 				
 				axios.post('http://localhost:8080/authentication/register', this.User)
 					.then((response) => {
-					console.log(response);
 					
+					console.log(response);
 					this.$router.push('/');
 				})
 					.catch((error) => {

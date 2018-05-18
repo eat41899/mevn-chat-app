@@ -22,13 +22,17 @@
 	//import Testvar from './components/TestComponent'
 	import Navbar from './components/Navbar'
 	import Home from './components/Home'
+	import ChatRoom from './components/ChatRoom'
+	
+	
 
 	export default {
 		name: 'App',
 		components: {
 			//Testvar, 
 			Navbar,
-			Home
+			Home,
+			ChatRoom
 		}
 	}
 </script>
